@@ -22,9 +22,21 @@
 
 <html>
         <head>
+                    
+                <style>
+                body {
+                  background-color: Blanchedalmond;
+                }
+                </style>
+
+                <link rel="stylesheet" href="stage.css">
 
         </head>
 <body>
+
+<div class="header">
+  <h1>Stage Review</h1>
+</div>
         
         <center> <h3> Liste de mes comptes rendus:</h3> </center>
             <?php foreach ($rows as $row) {

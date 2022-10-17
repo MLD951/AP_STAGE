@@ -47,18 +47,24 @@ $id = $_SESSION['id'];
 
 <html>
 <head>
-		<title> Commentaire du projet </title>
+		<title> Commentaires du projet </title>
 		<meta charset="UTF-8">
+        <style>
+    body {
+      background-color: Blanchedalmond;
+    }
+    </style>
 </head>
 <body>
+        <br> <br> <br> <br> <br> <br>
 		<div align = 'center'>
 			<form action='commentaire.php?id=<?php echo $idcr;?>' method="POST">                                      	                                         
-		     <input type="text" name = "commentaire" placeholder="Ajouter un commentaire" /> <br>
-		     <input type="submit" name= "envoyercommentaire" values= "Envoyer">
+		     <input type="text" style="width: 320px; height: 80px;" name = "commentaire" placeholder="Ajouter un commentaire" /> <br>
+		     <input type="submit" style="width: 120px; height: 25px;" name= "envoyercommentaire" values= "Envoyer">
 		    </form>
 		</div>
 
-		<div align = "center">
+		<div align = "center"> 
 		<h3> <font color= teal > Liste des commentaires:</h3> </font>
 	        <?php foreach ($rows as $row) {
 	      

@@ -17,6 +17,11 @@ include "conf-ionos.php";
 <html>
         <head>
         		<title> Liste élèves </title>
+                 <style>
+                    body {
+                      background-color: Blanchedalmond;
+                    }
+                    </style>
         </head>
 <body>
 

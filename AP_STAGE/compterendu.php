@@ -24,7 +24,11 @@ if ($connexion = mysqli_connect ($serveurBDD, $userBDD, $mdpBDD, $nomBDD))
 ?>
 <html>
         <head>
-
+                     <style>
+                        body {
+                          background-color: Blanchedalmond;
+                        }
+                        </style>                                    
         </head>
 <body>
         

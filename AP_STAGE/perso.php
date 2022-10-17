@@ -18,10 +18,25 @@ if($bdd=mysqli_connect($serveurBDD,$userBDD,$mdpBDD,$nomBDD))
     <title> Information personnelles </title>
     <meta charset="utf-8">
 
+<link rel="stylesheet" href="stage.css">
+
+    <style>
+    body {
+      background-color: Blanchedalmond;
+    }
+    </style>
+
 </head>
 
 
 <body>
+
+<div class="header">
+  <h1>Vos informations personnelles</h1>
+</div>
+
+
+
 
 
 <style>
@@ -30,10 +45,9 @@ table, th, td {
 }
 </style>
 <body>
+<br><br><br>
 
-<h2> Vos informations personnelles</h2>
-
-<table style="width:40%">
+<center> <table style="width:55%">
   <tr>
     <th>Nom</th>
     <th>Prenom</th>
@@ -47,16 +61,17 @@ table, th, td {
     <td> <center> <?php echo $_SESSION['email']; ?> </center> </td>
   </tr>
 </table>
+</center>
 
 <br> <br> <br>
 
 <?php  if ($usertype==0)
           { ?>
-            <a href= "eleve.php"> Cliquez pour retourner a l'accueil </a>
+            <center> <a href= "eleve.php"> Cliquez pour retourner a l'accueil </a> </center>
 <?php     } 
        else
             { ?>
-                <a href= "prof.php"> Cliquez pour retourner a l'accueil </a>
+                 <center> <a href= "prof.php"> Cliquez pour retourner a l'accueil </a> </center>
 <?php            } ?>
 
 

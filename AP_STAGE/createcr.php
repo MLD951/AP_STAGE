@@ -43,15 +43,22 @@ if($bdd=mysqli_connect($serveurBDD,$userBDD,$mdpBDD,$nomBDD))
 
 <html>
 <head>
-    <title> Creer un compte rendu </title>
+        <title>  Creer un compte rendu </title>
     <meta charset="UTF-8">
+   <style>
+    body {
+      background-color: Blanchedalmond;
+    }
+    </style>
 </head>
 <body>	
+            
 
+            <br> <br>
 			<form action= "createcr.php" method="POST">
-			<center> Ecrivez votre compte rendu </center>
-			<center> <textarea  name = "descriptif" rows="10" cols="40" :> </textarea>
-					 <input type= "submit" name="valider" value= "Valider">
+			<center>  <h2 style='color:#5C6566 '> Ecrivez votre compte rendu </h2> <img src = 'images/ecrire.png' '60px' height ='60px' > </center> <br>
+			<center> <textarea  name = "descriptif" rows="25" cols="75" :> </textarea> <br> <br>
+					 <input type= "submit" name="valider" value= "Insérer"> 
 			 </center>
 			<br> <br> <br>
 			<center> <a href= "eleve.php" > Cliquez pour retourner a l'accueil </a> </center>

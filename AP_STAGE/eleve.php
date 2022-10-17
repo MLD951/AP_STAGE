@@ -20,6 +20,11 @@ if($bdd=mysqli_connect($serveurBDD,$userBDD,$mdpBDD,$nomBDD))
 <head>
     <title> Eleve </title>
     <meta charset="utf-8">
+    <style>
+    body {
+      background-color: Blanchedalmond;
+    }
+    </style>
 </head>
 <body>
   

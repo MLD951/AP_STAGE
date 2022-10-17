@@ -15,7 +15,6 @@ body {
 }
 </style>
 
-<link rel="stylesheet" href="stage.css">
 
 <title> Connexion </title>
 
@@ -66,10 +65,6 @@ else
         </div>
 
 
-    <button class="favorite styled"
-        type="button">
-    Add to favorites
-</button>
 
 
     

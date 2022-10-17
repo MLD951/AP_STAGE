@@ -47,14 +47,19 @@ if($bdd=mysqli_connect($serveurBDD,$userBDD,$mdpBDD,$nomBDD))
 
 <html>
 <head>
-    <title> Modifier votre compte rendu </title>
+    <title> Modifiez votre compte rendu </title>
     <meta charset="utf-8">
+    <style>
+    body {
+      background-color: Blanchedalmond;
+    }
+    </style>    
 </head>
 <body>	
 			 <?php foreach ($rows as $row) {
             ?>
 			<form action= "modifcr.php?id=<?php echo $row['id'];?>" method="POST">
-			<center> <h2> Modifiez votre compte rendu </h2> </center>
+			<center>  <h2 style='color:#5C6566 '> Modifiez votre compte rendu </h2> <img src = 'images/modifcrr.png' '60px' height ='60px' > </center> <br>
 			<center> <textarea  name = "descriptif" rows="25" cols="75" :> <?php echo $row['descriptif']; ?> </textarea> </center> <br> <br> 
 			<center> <input type= "submit" style="width: 180px; height: 45px;" name="validermodif" value= "Valider la modification"> </center>
 			 </center>

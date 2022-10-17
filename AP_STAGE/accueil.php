@@ -61,14 +61,14 @@ include "conf-ionos.php";
 		}
 		if ($trouve==0) 
 		{
-			echo "Le compte n'existe pas";
+							echo "" ." <br> <br> <center> <img src = 'images/prblm.png' width = '80px' height '80px' /> </center> <br>  <center>  <h1 style='color:#5C6566 '> Le compte n'existe pas </h1> </center> <br> <br> <center> <a href = 'index.php'> Revenir à la page de connexion </a> </center> \n";
 		}
 		else 
 		{
 			
 			if ($hashmdp != $mdp_from_db)
 			{
-				echo "le mot de passe est incorrect";
+				echo "" ." <br> <br> <center> <img src = 'images/prblm.png' width = '80px' height ='80px' /> </center> <br>  <center>  <h1 style='color:#5C6566 '> le mot de passe est incorrect </h1> </center> <br> <br> <center> <a href = 'index.php'> Revenir à la page de connexion </a> </center> \n";
 				exit();
 			}
 			else
