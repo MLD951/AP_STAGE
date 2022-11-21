@@ -58,7 +58,7 @@ else
     <label for="login">Login:</label>
         <input type="text"  style = "padding: 8px 12px ;"placeholder="Entrez votre login"  name="login"> <br> <br>
     <label for="mdp">Mot de passe:</label> 
-        <input type="text" style = "padding: 8px 12px ;" placeholder="Entrez votre mot de passe"  name="mdp"> <br> <br> 
+        <input type="password" style = "padding: 8px 12px ;" placeholder="Entrez votre mot de passe"  name="mdp"> <br> <br> 
         <center> <input type="submit" value="Envoyer" name= "send_con"> </center> <br>
         
         <a href="oubli.php" > Mot de passe oublié </a>

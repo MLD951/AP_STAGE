@@ -39,12 +39,21 @@ if ($connexion = mysqli_connect ($serveurBDD, $userBDD, $mdpBDD, $nomBDD))
             <h3> Compte rendu du <?php echo $row['date'] ?>:</h3>
             <textarea rows= "25" cols= "75" wrap= "hard" disabled="yes" > <?php echo $row['descriptif']; ?> </textarea> <br> <br>
             <form action= "commentaire.php?id=<?php echo $row['id'];?>" method="POST"> 
-            <input type= "submit" name="commentaire" value= "Commenter le projet"> </input> </form>
+            <input type= "submit" name="commentaire" value= "Commenter le projet"> </input> </form> <br>
 
-            <?php  if($usertype==1)
+            <?php  
+                                     
+            foreach ($rows as $row) {
+	      
+	           echo " La note attribuée est de: " .$row['note'];
+
+                        }       
+
+                        
+                        if($usertype==1)
                         { ?>
 
-                            <a href = "prof.php" > Cliquez ici pour retourner à la liste des compte rendus </a> 
+                           <br> <br> <a href = "prof.php" > Cliquez ici pour retourner à la liste des compte rendus </a> 
                             <?php
                         }                                       
             
@@ -52,7 +61,7 @@ if ($connexion = mysqli_connect ($serveurBDD, $userBDD, $mdpBDD, $nomBDD))
                    if($usertype==0) 
              			{	?>
 
-             				<form action= "modifcr.php?id=<?php echo $row['id'];?>" method="POST">
+             				<form action= "modifcr.php?id=<?php echo $row['id'];?>" method="POST"> <br> <br> 
 				            <input type= "submit" name="modifier" value= "Modifier">
 				            <br> <br> <a href = "listcr.php" > Cliquez ici pour retourner à la liste des compte rendus </a>
 				            </center>
@@ -64,6 +73,8 @@ if ($connexion = mysqli_connect ($serveurBDD, $userBDD, $mdpBDD, $nomBDD))
           
             
             <?php } ?>
+
+
          
 
 </body> 
